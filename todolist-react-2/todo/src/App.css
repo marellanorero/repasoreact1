@@ -2,6 +2,9 @@
   background: #f7f4f5;
   height: 100vh;
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-list {
@@ -22,4 +25,23 @@
   justify-content: space-between;
   margin-bottom: 6px;
   padding: 3px 10px;
+}
+button {
+  border-color: #f7f4f5;
+  background-color: #f7f4f5;
+  box-shadow: none;
+  text-decoration: none;
+  border: solid 1px #f7f4f5;
+}
+button span {
+  color: #f7f4f5;
+}
+button span:hover{
+  color: black;
+}
+input {
+  margin-bottom: 30px;
+}
+h1 {
+ color: pink;
 }

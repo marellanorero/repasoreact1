@@ -7,7 +7,7 @@ function Todo({ todo, index, removeTodo }) {
       {todo.text}
       <div>
         
-        <button onClick={() => removeTodo(index)}>x</button>
+        <button onClick={() => removeTodo(index)}><span>x</span></button>
       </div>
     </div>
   );
@@ -21,15 +21,19 @@ function TodoForm({ addTodo }) {
     if (!value) return;
     addTodo(value);
     setValue("");
+    
   };
 
   return (
+    
     <form onSubmit={handleSubmit}>
+      <h1> Todo </h1>
       <input
         type="text"
         className="input"
         value={value}
         onChange={e => setValue(e.target.value)}
+        placeholder={addTodo.isCompleted ? "AL DÍA" : "ADD TODO"}
       />
     </form>
   );
